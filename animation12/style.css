@@ -1,0 +1,82 @@
+main .bewegung {
+  background-image: url(wolke.webp);
+  background-size: cover;
+  animation-name: bewegung;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  height: 100%;
+  width: 100%;
+}
+@keyframes bewegung {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: -1000px 0px;
+  }
+}
+/***********************************/
+/**  den Div mit Hintergrundbild  **/
+/**********************************/
+main .haupt-div {
+  height: 400px;
+  background-color: aquamarine;
+  transform: translateX(50%) translateY(30%);
+  animation-name: hintergrund;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/************************/
+/** Keyframes von div ***/
+/************************/
+@keyframes hintergrund {
+  0% {
+    width: 1px;
+  }
+
+  100% {
+    width: 50vw;
+  }
+}
+/*********************/
+/***  Den P text  ***/
+/********************/
+p {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  animation-name: p-text;
+  animation-duration: 6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/***********************************/
+/***  den Keyframes von p-texte  ***/
+/***********************************/
+@keyframes p-text {
+  0% {
+    transform: translateX(0vw) translateY(10vh);
+    font-size: 10%;
+    line-height: 0%;
+    color: white;
+  }
+  50% {
+    transform: translateX(5vw) translateY(15vh);
+    font-size: 50%;
+    line-height: 100%;
+    color: rgb(126, 173, 189);
+  }
+  100% {
+    transform: translateX(10vw) translateY(20vh);
+    font-size: 100%;
+    line-height: 150%;
+    color: white;
+    margin-right: 30px;
+  }
+}
